@@ -171,8 +171,7 @@ class Member extends CI_Controller
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Profil Berhasil diubah </div>');
             redirect('member/myprofil');
         }
-    } 
-
+    }
     public function logout()
     {
         $this->session->unset_userdata('email');
@@ -181,5 +180,4 @@ class Member extends CI_Controller
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Anda telah logout!!</div>');
         redirect('home');
     }
-
 }
